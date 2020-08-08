@@ -1,2 +1,2 @@
 # allistair-vilakazi
-This repository serves as a portal to my life as a developer. Come and see.
+This web application, built with React, serves as a portal to my life as a developer. Come and see.
