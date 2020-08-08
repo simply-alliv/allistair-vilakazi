@@ -15,7 +15,7 @@ RUN npm install react-scripts@3.4.1 -g
 
 # add app
 COPY . ./
-RUN yarn build
+RUN npm run build
 
 # Stage 2 - the production environment
 FROM nginx:1.12-alpine
