@@ -2,6 +2,7 @@
   "name": "allistair-vilakazi-web-app",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
@@ -18,7 +19,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test -- --coverage --watchAll=false",
+    "test": "react-scripts test --coverage --watchAll=false",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -37,14 +38,14 @@
     ]
   },
   "devDependencies": {
-    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.3",
     "jest-enzyme": "^7.1.2"
   },
   "babel": {
     "plugins": [
-      "@babel/plugin-proposal-class-properties"
+      "@babel/plugin-transform-react-jsx"
     ]
   },
   "jest": {
