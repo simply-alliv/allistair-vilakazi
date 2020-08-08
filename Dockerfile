@@ -1,5 +1,5 @@
 # Stage 1 - the build process
-FROM node:12.18.3-alpine
+FROM node:12.18.3-alpine as build-deps
 
 # set working directory
 WORKDIR /app
