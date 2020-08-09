@@ -1,13 +1,87 @@
+:root {
+  --colour-background-variant-dark: #1C1C1C;
+  --colour-background-variant-light: #F6F6F6;
+  --colour-accent: #FFBB0B;
+  --colour-text-primary-light: #EEEEEE;
+  --colour-text-secondary-light: #EEEEEE;
+  --colour-text-primary-dark: #1C1C1C;
+  --colour-text-secondary-dark: #1C1C1C;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* Theming */
+
+button, a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  text-decoration: none;
+  color: var(--colour-accent);
+  padding-inline-start: 12px;
+  padding-inline-end: 12px;
+  text-transform: uppercase;
+  min-width: 64px;
+  height: 36px;
+  cursor: pointer;
+}
+
+.background-light {
+  background-color: var(--colour-background-variant-light);
+  color: var(--colour-text-primary-dark);
+}
+
+.background-dark {
+  background-color: var(--colour-background-variant-dark);
+  color: var(--colour-text-primary-light);
+}
+
+/* Basic Layout */
+
+.width__100-percent {
+  width: 100%;
+}
+
+.container {
+  /* Mobile padding */
+  padding-inline-start: 16px;
+  padding-inline-end: 16px;
+  /* Tablet padding */
+  @media screen and (min-width: 600px) {
+    padding-inline-start: 32px;
+    padding-inline-end: 32px;
+  }
+}
+
+/* Flex Layout */
+
+.flex {
+  display: flex;
+}
+
+.flex__column {
+  flex-direction: column;
+}
+
+.flex__justify-content--space-between {
+  justify-content: space-between;
+}
+
+.flex__justify-content--center {
+  justify-content: center;
+}
+
+.flex__align-items--center {
+  align-items: center;
 }

@@ -1,0 +1,26 @@
+.shell {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+}
+
+.navbar, .download {
+  width: 100%;
+  height: 56px;
+}
+
+.navigation {
+  width: 100%;
+}
+
+.navigation #about-link {
+  transform: rotate(90deg);
+}
+
+.navigation #portfolio-link {
+  transform: rotate(-90deg);
+}
