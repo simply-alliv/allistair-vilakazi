@@ -1,7 +1,44 @@
 .home {
   width: 100%;
   height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+}
+
+.hero-image, .hero-text {
+  position: absolute;
+}
+
+.hero-image {
+  top: 80px;
+  right: 64px;
+}
+
+@media screen and (min-width: 600px) {
+  .hero-image {
+    right: 120px;
+  }
+}
+
+.hero-text {
+  top: 272px;
+  left: 64px;
+}
+
+.hero-text h1 {
+  font-size: 40px;
+  margin: 4px;
+}
+
+@media screen and (min-width: 600px) {
+  .hero-text {
+    top: 144px;
+    left: 144px;
+  }
+  .hero-text h1 {
+    font-size: 72px;
+  }
+}
+
+.hero-text h1 span.emphasis {
+  color: var(--colour-accent);
+  font-size: 1.3em;
 }

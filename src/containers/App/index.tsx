@@ -16,10 +16,10 @@ const App: FunctionComponent = () => {
           </Link>
         </div>
         <div className="navigation flex flex__justify-content--space-between">
-          <Link id="about-link" to="/about">
+          <Link className="vertical-button" id="about-link" to="/about">
             About
           </Link>
-          <Link id="portfolio-link" to="/portfolio">
+          <Link className="vertical-button" id="portfolio-link" to="/portfolio">
             Portfolio
           </Link>
         </div>

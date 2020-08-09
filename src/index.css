@@ -8,11 +8,29 @@
   --colour-text-secondary-dark: #1C1C1C;
 }
 
+/* Typography */
+
+@font-face {
+  font-family: 'Kirvy';
+  font-weight: normal;
+  src: url('./assets/fonts/woff2/Kirvy-Regular.woff2') format('woff2'), url('./assets/fonts/woff/Kirvy-Regular.woff') format('woff'), url('./assets/fonts/ttf/Kirvy-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Kirvy';
+  font-weight: bold;
+  src: url('./assets/fonts/woff2/Kirvy-Bold.woff2') format('woff2'), url('./assets/fonts/woff/Kirvy-Bold.woff') format('woff'), url('./assets/fonts/ttf/Kirvy-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'LondrinaShadow';
+  font-weight: bold;
+  src: url('./assets/fonts/woff2/LondrinaShadow-Regular.woff2') format('woff2'), url('./assets/fonts/woff/LondrinaShadow-Regular.woff') format('woff'), url('./assets/fonts/ttf/LondrinaShadow-Regular.ttf') format('truetype');
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: Kirvy;
 }
 
 code {
@@ -37,6 +55,13 @@ button, a {
   cursor: pointer;
 }
 
+button.vertical-button, a.vertical-button {
+  width: 36px;
+  min-width: auto;
+  height: auto;
+  min-height: 64px;
+}
+
 .background-light {
   background-color: var(--colour-background-variant-light);
   color: var(--colour-text-primary-dark);
@@ -51,6 +76,10 @@ button, a {
 
 .width__100-percent {
   width: 100%;
+}
+
+.display__block {
+  display: block;
 }
 
 .container {
