@@ -28,9 +28,17 @@
   src: url('./assets/fonts/woff2/LondrinaShadow-Regular.woff2') format('woff2'), url('./assets/fonts/woff/LondrinaShadow-Regular.woff') format('woff'), url('./assets/fonts/ttf/LondrinaShadow-Regular.ttf') format('truetype');
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: Kirvy;
+}
+
+.display-font {
+  font-family: LondrinaShadow;
 }
 
 code {

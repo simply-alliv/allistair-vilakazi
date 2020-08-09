@@ -3,7 +3,12 @@ img {
     max-width: 256px;
     height: auto;
     object-fit: cover;
-    filter: grayscale(0.2) opacity(0.7);
+    opacity: 0.7;
+    filter: grayscale(0.2);
+}
+
+img.opaque {
+    opacity: 1;
 }
 
 @media screen and (min-width: 600px) {
