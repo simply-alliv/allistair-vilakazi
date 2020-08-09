@@ -1,8 +1,6 @@
 # Allistair Vilakazi's Web App Resume
 
-![Build](https://github.com/simply-alliv/allistair-vilakazi/workflows/CICD/badge.svg?event=push)
-
-![Coverage Status](https://coveralls.io/repos/github/simply-alliv/allistair-vilakazi/badge.svg?branch=master)(https://coveralls.io/github/simply-alliv/allistair-vilakazi?branch=master)
+![Build](https://github.com/simply-alliv/allistair-vilakazi/workflows/CICD/badge.svg?event=push) ![Coverage Status](https://coveralls.io/repos/github/simply-alliv/allistair-vilakazi/badge.svg?branch=master)
 
 ## Overview
 
