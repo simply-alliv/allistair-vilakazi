@@ -2,10 +2,10 @@
 FROM node:12.18.3-alpine as build-deps
 
 # set working directory
-WORKDIR /app
+WORKDIR /usr/src/app
 
-# add `/app/node_modules/.bin` to $PATH
-ENV PATH /app/node_modules/.bin:$PATH
+# add `/usr/src/app/node_modules/.bin` to $PATH
+ENV PATH /usr/src/app/node_modules/.bin:$PATH
 
 # install app dependencies
 COPY package.json ./
