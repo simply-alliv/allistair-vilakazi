@@ -19,7 +19,7 @@
 }
 
 .hero-text {
-  top: 272px;
+  top: 196px;
   left: 64px;
 }
 
@@ -30,7 +30,7 @@
 
 @media screen and (min-width: 600px) {
   .hero-text {
-    top: 144px;
+    top: 120px;
     left: 144px;
   }
   .hero-text h1 {

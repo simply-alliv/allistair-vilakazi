@@ -20,6 +20,10 @@ const Home: FunctionComponent = () => {
             <span>VILAKAZI</span>
             <span className="emphasis">.</span>
           </h1>
+          <p>
+            Dedicated Software Developer. Live in the future. Big fan of the
+            Jawwas #Uthini!
+          </p>
         </div>
       </div>
     </div>
