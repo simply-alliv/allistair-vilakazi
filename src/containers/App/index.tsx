@@ -45,7 +45,14 @@ const App: FunctionComponent = () => {
           </Switch>
         </div>
         <div className="navigation navigation-bottom flex flex__justify-content--center flex__align-items--center">
-          <button id="download-resume-link">Download Full Resume (PDF)</button>
+          <a
+            className="button"
+            id="download-resume-link"
+            href="/documents/allistair-vilakazi-cv.pdf"
+            download
+          >
+            Download Full Resume (PDF)
+          </a>
         </div>
       </div>
     </React.Fragment>
