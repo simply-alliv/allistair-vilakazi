@@ -1,12 +1,14 @@
 import React, { FunctionComponent } from "react";
-import { Switch, Route, Link } from "react-router-dom";
-import "./index.css";
+import { Switch, Route, Link, useLocation } from "react-router-dom";
 import Home from "../Home";
 import About from "../About";
 import Portfolio from "../Portfolio";
 import Logo from "../../components/Logo";
+import "./index.css";
 
 const App: FunctionComponent = () => {
+  let location = useLocation();
+
   return (
     <React.Fragment>
       <div className="shell flex flex__column flex__justify-content--space-between">
@@ -32,13 +34,13 @@ const App: FunctionComponent = () => {
         <div className="routes">
           <Switch>
             <Route path="/about">
-              <About />
+              <About activeRoute={location.pathname} />
             </Route>
             <Route path="/portfolio">
-              <Portfolio />
+              <Portfolio activeRoute={location.pathname} />
             </Route>
             <Route path="/">
-              <Home />
+              <Home activeRoute={location.pathname} />
             </Route>
           </Switch>
         </div>

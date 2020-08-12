@@ -1,12 +1,21 @@
 import React, { FunctionComponent } from "react";
-import "./index.css";
+import { CSSTransition } from "react-transition-group";
 import Card from "../../components/Card";
 import CardTitle from "../../components/CardTitle";
 import CardVideo from "../../components/CardVideo";
+import "./index.css";
 
-const Portfolio: FunctionComponent = () => {
+interface PortfolioProps {
+  activeRoute: string;
+}
+
+const Portfolio: FunctionComponent<PortfolioProps> = ({ activeRoute }) => {
   return (
-    <React.Fragment>
+    <CSSTransition
+      in={activeRoute === "/portfolio"}
+      timeout={300}
+      classNames="portfolio"
+    >
       <div className="portfolio background-light">
         <div className="grid grid-autofit">
           <Card
@@ -104,7 +113,7 @@ const Portfolio: FunctionComponent = () => {
           </Card>
         </div>
       </div>
-    </React.Fragment>
+    </CSSTransition>
   );
 };
 

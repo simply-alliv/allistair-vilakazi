@@ -3,7 +3,8 @@
   height: 100vh;
 }
 
-.hero-image, .hero-text {
+.hero-image,
+.hero-text {
   position: absolute;
 }
 
@@ -46,4 +47,30 @@
 .hero-text h1 span.emphasis {
   color: var(--colour-accent);
   font-size: 1.3em;
+}
+
+.home-enter {
+  opacity: 0;
+}
+
+.home-enter-active {
+  opacity: 0.5;
+  transition: opacity 300ms;
+}
+
+.home-enter-done {
+  opacity: 1;
+}
+
+.home-exit {
+  opacity: 1;
+}
+
+.home-exit-active {
+  opacity: 0.5;
+  transition: opacity 300ms;
+}
+
+.home-exit-done {
+  opacity: 1;
 }

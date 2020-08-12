@@ -5,7 +5,8 @@
   justify-content: center;
 }
 
-.about p, .about h1 {
+.about p,
+.about h1 {
   text-align: center;
   max-width: 800px;
 }
@@ -16,6 +17,35 @@
   }
 }
 
-.slide-1, .slide-2, .slide-3, .slide-4 {
+.slide-1,
+.slide-2,
+.slide-3,
+.slide-4 {
   padding: 48px;
+}
+
+.about-enter {
+  opacity: 0;
+}
+
+.about-enter-active {
+  opacity: 0.5;
+  transition: opacity 300ms;
+}
+
+.about-enter-done {
+  opacity: 1;
+}
+
+.about-exit {
+  opacity: 1;
+}
+
+.about-exit-active {
+  opacity: 0.5;
+  transition: opacity 300ms;
+}
+
+.about-exit-done {
+  opacity: 1;
 }
