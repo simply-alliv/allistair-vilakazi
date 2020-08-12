@@ -1,31 +1,39 @@
 :root {
-  --colour-background-variant-dark: #1C1C1C;
-  --colour-background-variant-light: #F6F6F6;
-  --colour-accent: #FFBB0B;
-  --colour-text-primary-light: #EEEEEE;
-  --colour-text-secondary-light: #EEEEEE;
-  --colour-text-primary-dark: #1C1C1C;
-  --colour-text-secondary-dark: #1C1C1C;
+  --colour-surface: #ffffff;
+  --colour-background-variant-dark: #1c1c1c;
+  --colour-background-variant-light: #f6f6f6;
+  --colour-accent: #ffbb0b;
+  --colour-text-primary-light: #eeeeee;
+  --colour-text-secondary-light: #eeeeee;
+  --colour-text-primary-dark: #1c1c1c;
+  --colour-text-secondary-dark: #1c1c1c;
+  --colour-border: #1c1c1c;
+  /* Sizes */
+  --card-padding: 16px;
+  --card-border-radius: 8px;
+  /* Effects */
+  --card-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  --card-box-shadow-elevated: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 /* Typography */
 
 @font-face {
-  font-family: 'Kirvy';
+  font-family: "Kirvy";
   font-weight: normal;
-  src: url('./assets/fonts/woff2/Kirvy-Regular.woff2') format('woff2'), url('./assets/fonts/woff/Kirvy-Regular.woff') format('woff'), url('./assets/fonts/ttf/Kirvy-Regular.ttf') format('truetype');
+  src: url("./assets/fonts/woff2/Kirvy-Regular.woff2") format("woff2"), url("./assets/fonts/woff/Kirvy-Regular.woff") format("woff"), url("./assets/fonts/ttf/Kirvy-Regular.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Kirvy';
+  font-family: "Kirvy";
   font-weight: bold;
-  src: url('./assets/fonts/woff2/Kirvy-Bold.woff2') format('woff2'), url('./assets/fonts/woff/Kirvy-Bold.woff') format('woff'), url('./assets/fonts/ttf/Kirvy-Bold.ttf') format('truetype');
+  src: url("./assets/fonts/woff2/Kirvy-Bold.woff2") format("woff2"), url("./assets/fonts/woff/Kirvy-Bold.woff") format("woff"), url("./assets/fonts/ttf/Kirvy-Bold.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'LondrinaShadow';
+  font-family: "LondrinaShadow";
   font-weight: bold;
-  src: url('./assets/fonts/woff2/LondrinaShadow-Regular.woff2') format('woff2'), url('./assets/fonts/woff/LondrinaShadow-Regular.woff') format('woff'), url('./assets/fonts/ttf/LondrinaShadow-Regular.ttf') format('truetype');
+  src: url("./assets/fonts/woff2/LondrinaShadow-Regular.woff2") format("woff2"), url("./assets/fonts/woff/LondrinaShadow-Regular.woff") format("woff"), url("./assets/fonts/ttf/LondrinaShadow-Regular.ttf") format("truetype");
 }
 
 * {
@@ -42,12 +50,12 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
 /* Theming */
 
-button, a {
+button, a.button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -86,6 +94,14 @@ button.vertical-button, a.vertical-button {
   width: 100%;
 }
 
+.height__100-percent {
+  height: 100%;
+}
+
+.height__100-vh {
+  height: 100vh;
+}
+
 .display__block {
   display: block;
 }
@@ -121,4 +137,28 @@ button.vertical-button, a.vertical-button {
 
 .flex__align-items--center {
   align-items: center;
+}
+
+/* Grid Layout */
+
+.grid {
+  display: grid;
+  column-gap: 16px;
+  row-gap: 16px;
+}
+
+.grid-autofit {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .grid-autofit {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .grid-autofit {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }

@@ -1,21 +1,47 @@
 .shell {
-  z-index: 100;
   width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  position: fixed;
 }
 
-.navbar, .download {
+.routes {
   width: 100%;
-  height: 56px;
 }
 
 .navigation {
-  width: 100%;
+  z-index: 100;
+  position: fixed;
+}
+
+.navigation-top, .navigation-bottom {
+  height: 56px;
+}
+
+.navigation-top {
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.navigation-bottom {
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.navigation-left {
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.navigation-right {
+  top: 0;
+  bottom: 0;
+  right: 0;
 }
 
 .navigation #about-link {

@@ -1,0 +1,32 @@
+.card {
+  background: var(--colour-surface);
+  padding: var(--card-padding);
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+
+a.card {
+  color: inherit;
+  text-decoration: none;
+}
+
+.card-rounded {
+  border-radius: var(--card-border-radius);
+}
+
+.card-outlined {
+  border-style: solid;
+  border-color: var(--colour-border);
+}
+
+.card-elevated {
+  box-shadow: var(--card-box-shadow);
+  transform: scale(0.99);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.card-elevated:hover {
+  transform: scale(1);
+  box-shadow: var(--card-box-shadow-elevated);
+}

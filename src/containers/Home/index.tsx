@@ -8,7 +8,7 @@ const Home: FunctionComponent = () => {
       <div className="hero-image flex flex__justify-content--center">
         <ProfilePicture />
       </div>
-      <div className="hero-text flex flex__column flex flex__align-items--center">
+      <div className="hero-text">
         <div className="hero-text__content">
           <h1>
             <span>I</span>

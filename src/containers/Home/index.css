@@ -20,12 +20,17 @@
 
 .hero-text {
   top: 196px;
-  left: 64px;
+  left: 56px;
+  right: 16px;
 }
 
 .hero-text h1 {
   font-size: 40px;
   margin: 4px;
+}
+
+.hero-text p {
+  padding-inline-end: 16px;
 }
 
 @media screen and (min-width: 600px) {

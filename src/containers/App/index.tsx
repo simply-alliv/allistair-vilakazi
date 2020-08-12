@@ -10,35 +10,41 @@ const App: FunctionComponent = () => {
   return (
     <React.Fragment>
       <div className="shell flex flex__column flex__justify-content--space-between">
-        <div className="navbar flex flex__justify-content--center flex__align-items--center">
-          <Link id="home-link" to="/">
+        <div className="navigation navigation-top flex flex__justify-content--center flex__align-items--center">
+          <Link className="button" id="home-link" to="/">
             <Logo />
           </Link>
         </div>
-        <div className="navigation flex flex__justify-content--space-between">
-          <Link className="vertical-button" id="about-link" to="/about">
+        <div className="navigation navigation-left flex flex__align-items--center">
+          <Link className="button vertical-button" id="about-link" to="/about">
             About
           </Link>
-          <Link className="vertical-button" id="portfolio-link" to="/portfolio">
+        </div>
+        <div className="navigation navigation-right flex flex__align-items--center">
+          <Link
+            className="button vertical-button"
+            id="portfolio-link"
+            to="/portfolio"
+          >
             Portfolio
           </Link>
         </div>
-        <div className="download flex flex__justify-content--center flex__align-items--center">
+        <div className="routes">
+          <Switch>
+            <Route path="/about">
+              <About />
+            </Route>
+            <Route path="/portfolio">
+              <Portfolio />
+            </Route>
+            <Route path="/">
+              <Home />
+            </Route>
+          </Switch>
+        </div>
+        <div className="navigation navigation-bottom flex flex__justify-content--center flex__align-items--center">
           <button id="download-resume-link">Download Full Resume (PDF)</button>
         </div>
-      </div>
-      <div className="routes">
-        <Switch>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/portfolio">
-            <Portfolio />
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route>
-        </Switch>
       </div>
     </React.Fragment>
   );
