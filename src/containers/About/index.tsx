@@ -86,10 +86,11 @@ const About: FunctionComponent<AboutProps> = ({ activeRoute }) => {
             <span className="display__block">
               I work mainly on building micro-services, or APIs, with
               JavaScript, Typescript, and Python for MicroAPI. MicroAPI is an
-              idea where API become the new packages. As a JavaScript developer,
-              I use NPM a lot. Not disregarding the value of NPM, MicroAPI aims
-              to make APIs easily installable through one kind of API manager -
-              MicroAPI. The MicroAPI project is open-source!
+              idea where "API" becomes the new "npm package". As a JavaScript
+              developer, I use NPM a lot because sharing code is always better.
+              Not disregarding the value of NPM, MicroAPI aims to make APIs
+              easily installable through a kind of API manager - MicroAPI. Side
+              note: the MicroAPI project will be open-source upon release!
             </span>
           </p>
           <p>
@@ -143,8 +144,8 @@ const About: FunctionComponent<AboutProps> = ({ activeRoute }) => {
               <strong>2017 - 2019</strong>
             </span>
             <span className="display__block">
-              I taught myself web development with a focus in e-commerce,
-              security, and serverless architecture.
+              I taught myself web development with a focus in JavaScript and
+              serverless architecture (Azure and GCP functions).
             </span>
           </p>
           <p>
@@ -153,8 +154,9 @@ const About: FunctionComponent<AboutProps> = ({ activeRoute }) => {
               <strong>2020 - present</strong>
             </span>
             <span className="display__block">
-              I started as an HNG intern in July and now I am a core maintainer
-              of one the startups (MicroAPI) that stemmed out of the internship.
+              I started as an HNG intern in July and am currently a core
+              maintainer of one the startups (MicroAPI) that stemmed from of the
+              internship.
             </span>
           </p>
         </div>
